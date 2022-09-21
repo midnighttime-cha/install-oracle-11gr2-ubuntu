@@ -334,7 +334,7 @@ chown oracle:oinstall linux.x64_11gR2_*.zip
 ```
 4. ย้ายไฟล์ติดตั้งไปอยู่ที่ `ORACLE_HOME`
 ```sh
-mv linux.x64_11gR2_database_*.zip /u01/app/oracle/product/19.0.0/dbhome_1/
+mv linux.x64_11gR2_database_*.zip /u01/app/oracle/product/11.2.0/dbhome_1
 ```
 5. ทำการ Login ด้วย user oracle
 ```sh
