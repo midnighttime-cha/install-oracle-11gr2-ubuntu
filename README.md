@@ -332,23 +332,19 @@ source ~/.bashrc
 ```sh
 chown oracle:oinstall linux.x64_11gR2_*.zip
 ```
-4. ย้ายไฟล์ติดตั้งไปอยู่ที่ `ORACLE_HOME`
-```sh
-mv linux.x64_11gR2_database_*.zip /u01/app/oracle/product/11.2.0/dbhome_1
-```
-5. ทำการ Login ด้วย user oracle
+4. ทำการ Login ด้วย user oracle
 ```sh
 su oracle
 ```
-6. ทำการ unzip
+4. ทำการ unzip
 ```sh
-cd $ORACLE_HOME
+cd /home/oracle
 
 unzip linux.x64_11gR2_database_1of2.zip
 
 unzip linux.x64_11gR2_database_2of2.zip
 ```
-7. ทำการติดตั้ง
+6. ทำการติดตั้ง
 ```sh
 cd ${ORACLE_HOME}/database
 
