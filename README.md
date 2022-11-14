@@ -1,4 +1,9 @@
-# วิธีติดตั้ง Oracle 11g r2 บน ubuntu server 20.04LTS
+# วิธีติดตั้ง Oracle 11g r2 บน ubuntu server 18.04LTS
+
+## ความต้องการระบบ
+- CPU: 1 CPU
+- RAM: 4 GB
+- Ubuntu Server 18.04 TLS
 
 ## สร้าง Swap File
 1. ทำการปืดการใช้งาน swap file ชั่วคราวก่อน
@@ -26,7 +31,7 @@ SwapTotal:       8388604 kB
 ## สร้าง User group ของ Oracle
 1. ใช้ user root ในการติดตั้ง
 ```sh
-sudo su
+sudo -i
 ```
 2. สร้าง Oracle Inventory group
 ```sh
