@@ -203,39 +203,74 @@ apt update
 2. ทำการตั้ง Package ต่อไปนี้
 ```sh
 apt install alien -y
+
 apt install autoconf -y
+
 apt install automake -y
+
 apt install autotools-dev -y
+
 apt install binutils -y
+
 apt install bzip2 -y
+
 apt install doxygen -y
+
 apt install elfutils -y
+
 apt install expat -y
+
 apt install gawk -y
+
 apt install gcc -y
+
 apt install gcc-multilib -y
+
 apt install g++-multilib -y
+
 apt install libelf-dev -y
+
 apt install libltdl-dev -y
+
 apt install libodbcinstq4-1 libodbcinstq4-1:i386 -y
+
 apt install libpth-dev -y
+
 apt install libpthread-stubs0-dev -y
+
 apt install libstdc++5 -y
+
 apt install make -y
+
 apt install openssh-server -y
+
 apt install rlwrap -y
+
 apt install rpm -y
+
 apt install sysstat -y
+
 apt install unixodbc -y
+
 apt install unixodbc-dev -y
+
 apt install unzip -y
+
 apt install x11-utils -y
+
 apt install zlibc -y
+
 apt install libaio1 -y
+
 apt install libaio-dev -y
+
 apt install ia32-libs -y
+
 apt install lib32z1 -y
+
 apt install libmotif4 -y
+
+apt install lib32z1 libxm4 libuil4 libmrm4 libmotif-common lib32ncurses5 lib32tinfo5 lib32ncurses5 lib32z1 -y
 ```
 
 ## สร้าง symbolic links
