@@ -259,17 +259,22 @@ sudo apt-get install openssh-server -y
 1. รันคำสั่งต่อไปนี้
 ```sh
 sudo ln -s /usr/bin/basename /bin/basename
+
 sudo ln -sf /bin/bash /bin/sh
+
 sudo ln -s /usr/bin/rpm /bin/rpm
+
 sudo ln -s /usr/bin/awk /bin/awk
+
 sudo ln -s /usr/lib/x86_64-linux-gnu/libc_nonshared.a /usr/lib64/ 
+
 sudo ln -s /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a /usr/lib64/ 
+
 sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib64/ 
+
 sudo ln -s /lib/x86_64-linux-gnu/libgcc_s.so.1 /lib64
+
 sudo ln -s /usr/lib/i386-linux-gnu/libpthread_nonshared.a /usr/lib/libpthread_nonshared.a
-
-
-Leia mais: https://leandro26.webnode.page/products/installing-oracle-11g-on-linux-unbutu/
 ```
 2. สร้างไฟล์ Red Hat Linux release
 ```sh
