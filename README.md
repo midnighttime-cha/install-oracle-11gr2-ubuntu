@@ -202,115 +202,74 @@ apt update
 ```
 2. ทำการตั้ง Package ต่อไปนี้
 ```sh
-apt install alien -y
+sudo apt-get install libaio1 -y
 
-apt install autoconf -y
+sudo apt-get install libaio-dev -y
 
-apt install automake -y
+sudo apt-get install unixODBC -y
 
-apt install autotools-dev -y
+sudo apt-get install unixODBC-dev -y
 
-apt install binutils -y
+sudo apt-get install expat -y
 
-apt install bzip2 -y
+sudo apt-get install sysstat -y
 
-apt install doxygen -y
+sudo apt-get install libelf-dev -y
 
-apt install elfutils -y
+sudo apt-get install elfutils -y
 
-apt install expat -y
+sudo apt-get install lsb-cxx -y
 
-apt install gawk -y
+sudo apt-get install pdksh -y
 
-apt install gcc -y
+sudo apt-get install libstdc++5 -y
 
-apt install gcc-multilib -y
+sudo apt-get install ia32-libs -y
 
-apt install g++-multilib -y
+sudo apt-get install ksh -y
 
-apt install libelf-dev -y
+sudo apt-get install lesstif2 -y
 
-apt install libltdl-dev -y
+sudo apt-get install alien -y
 
-apt install libodbcinstq4-1 libodbcinstq4-1:i386 -y
+sudo apt-get install gcc -y
 
-apt install libpth-dev -y
+sudo apt-get install gawk -y
 
-apt install libpthread-stubs0-dev -y
+sudo apt-get install binutils -y
 
-apt install libstdc++5 -y
+sudo apt-get install gawk -y
 
-apt install make -y
+sudo apt-get install x11-utils -y
 
-apt install openssh-server -y
+sudo apt-get install rpm -y
 
-apt install rlwrap -y
+sudo apt-get install alien -y
 
-apt install rpm -y
+sudo apt-get install lsb-rpm -y
 
-apt install sysstat -y
+sudo apt-get install libmotif3 -y
 
-apt install unixodbc -y
+sudo apt-get install lesstif2 -y
 
-apt install unixodbc-dev -y
-
-apt install unzip -y
-
-apt install x11-utils -y
-
-apt install zlibc -y
-
-apt install libaio1 -y
-
-apt install libaio-dev -y
-
-apt install ia32-libs -y
-
-apt install lib32z1 -y
-
-apt install libmotif4 -y
-
-apt install lib32z1 libxm4 libuil4 libmrm4 libmotif-common lib32ncurses5 lib32tinfo5 lib32ncurses5 lib32z1 -y
+sudo apt-get install openssh-server -y
 ```
 
 ## สร้าง symbolic links
 1. รันคำสั่งต่อไปนี้
 ```sh
-mkdir /usr/lib64
+sudo ln -s /usr/bin/basename /bin/basename
+sudo ln -sf /bin/bash /bin/sh
+sudo ln -s /usr/bin/rpm /bin/rpm
+sudo ln -s /usr/bin/awk /bin/awk
+sudo ln -s /usr/lib/x86_64-linux-gnu/libc_nonshared.a /usr/lib64/ 
+sudo ln -s /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a /usr/lib64/ 
+sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib64/ 
+sudo ln -s /lib/x86_64-linux-gnu/libgcc_s.so.1 /lib64
+sudo ln -s /usr/lib/i386-linux-gnu/libpthread_nonshared.a /usr/lib/libpthread_nonshared.a
 
-ln -s /etc /etc/rc.d
 
-ln -s /usr/bin/awk /bin/awk
-
-ln -s /usr/bin/basename /bin/basename
-
-ln -s /usr/bin/rpm /bin/rpm
-
-ln -s /lib/x86_64-linux-gnu/libgcc_s.so.1 /usr/lib64/
-
-ln -s /usr/lib/x86_64-linux-gnu/libc_nonshared.a /usr/lib64/
-
-ln -s /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a /usr/lib64/
-
-ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib64/
-
-ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
-
-ln -sf /bin/bash /bin/sh
-
-ln -s /etc/rc0.d /etc/rc.d/rc0.d
-
-ln -s /etc/rc2.d /etc/rc.d/rc2.d
-
-ln -s /etc/rc3.d /etc/rc.d/rc3.d
-
-ln -s /etc/rc4.d /etc/rc.d/rc4.d
-
-ln -s /etc/rc5.d /etc/rc.d/rc5.d
-
-ln -s /etc/rc6.d /etc/rc.d/rc6.d
-
-ln -s /etc/init.d /etc/rc.d/init.d
+Leia mais: https://leandro26.webnode.page/products/installing-oracle-11g-on-linux-unbutu/
 ```
 2. สร้างไฟล์ Red Hat Linux release
 ```sh
